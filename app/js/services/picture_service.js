@@ -1,3 +1,5 @@
+var config = require( __dirname + '/../config');
+
 var handleSuccess = function(callback) {
   return function(res) {
     callback(null, res.data);
@@ -10,7 +12,6 @@ var handleFailure = function(callback) {
   };
 };
 
-
 //Generic resource creation service
 module.exports = exports = function(app) {
   app.factory('cfResource' , ['$http' , function($http) {
@@ -19,17 +20,17 @@ module.exports = exports = function(app) {
     };
 
     Resource.prototype.get = function(callback) {
-      $http.get('http://localhost:5000/api/')
+      $http.get('http://localhost:' + config.PORT + '/api/')
         .then( handleSuccess(callback) , handleFailure(callback) );
     };
 
     Resource.prototype.post = function(data , callback) {
-      $http.post('http://localhost:5000/api/', data)
+      $http.post('http://localhost:' + config.PORT + '/api/', data)
         .then( handleSuccess(callback) , handleFailure(callback) );
     };
 
     Resource.prototype.delete = function(data , callback) {
-      $http.delete('http://localhost:5000/api/delete' + '/' + data._id)
+      $http.delete('http://localhost:' + config.PORT + '/api/' + '/' + data._id)
         .then( handleSuccess(callback) , handleFailure(callback) );
     };
 

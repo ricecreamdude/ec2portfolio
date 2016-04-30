@@ -62,6 +62,7 @@ gulp.task('watch' , () => {
 });
 
 gulp.task('build:dev', ['webpack:dev', 'html:dev' , 'css:dev' , 'webpack:test']);
-gulp.task('default', ['build:dev','watch']);
+
+gulp.task('default', ['build:dev']);
 
 //Copied form GitHub - Javascript Week 6

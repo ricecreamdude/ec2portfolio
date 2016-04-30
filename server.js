@@ -7,7 +7,8 @@ const pictureRouter = require( __dirname + '/routes/picture_routes');
 
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/picture_app');
 
-var PORT = 5000;
+//OFFICAL PORT LOCATION
+var PORT = 8080;
 
 //Adding routes
 app.use('/api' , pictureRouter);

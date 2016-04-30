@@ -1,6 +1,15 @@
 {
   "name": "ec2portfolio",
+  "version": "1.0.0",
+  "description": "Joshua Ho's online portfolio @ joshuaho.me",
+  "main": "server.js",
+  "author": "Joshua Ho",
+  "license": "ISC",
   "private": true,
+  "dependencies": {
+    "angular": "^1.5.5",
+    "express": "^4.13.4"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "2.3.1",
@@ -39,4 +48,5 @@
   "scripts": {
     "test": "karma start test/karma.conf.js"
   }
+
 }

@@ -3,7 +3,7 @@ module.exports = function(app){
     return{
       replace: true,
       transclude: true,
-      restrict: 'AEC',
+      restrict: 'E',
       templateUrl: '/templates/template_nav.html',
       scope: true
     };

@@ -11,33 +11,14 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </head>
-  <main>
-    <nav class="navbar navbar-default">
-      <ul class="nav nav-pills">
-        <li role="presentation"><a href="#">Home</a></li>
-        <li role="presentation"><a href="#">Projects</a></li>
-        <li role="presentation"><a href="#">Experience</a></li>
-      </ul>
-    </nav>
-    <header id="header">
-      <button class="btn btn-large">Helloooo</button>
-      <div class="header-title">
-        Joshua Ho
-      </div>
-      <ul class="nav nav-pills">
-        <li role="presentation">Home</li>
-        <li role="presentation">Projects</li>
-        <li role="presentation">Experience</li>
-      </ul>
-    </header>
-    <content id="primary">
+  <body>
+    <template-nav> </template-nav>
+
+    <main id="primary">
         <picture-display ng-repeat="card in pictures track by $index" ></picture-display>
-    </content>
-    <footer id="footer">
-      <div class='footer-body'>
-        Created by Joshua Ho - 2/15/2016 <br />
-      </div>
-      <script type="text/javascript" src="bundle.js"></script>
-    </footer>
-  </main>
+    </main>
+
+    <template-footer> </template-footer>
+  </body>
+  <script type="text/javascript" src="bundle.js"></script>
 </html>

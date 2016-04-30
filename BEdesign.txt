@@ -1,0 +1,23 @@
+This document is being used to outline ec2portfolio's BE route planning.
+
+Main: server.js
+
+////////////
+// Routes //
+////////////
+
+  Default (/)
+  Projects (/project)
+    GET
+    POST
+    DELETE
+    EDIT
+  Work Experience (/exp)
+  Skills (/skill)
+
+////////////
+// Models //
+////////////
+
+  Projects
+    Fetch and display in specific categories based on project type

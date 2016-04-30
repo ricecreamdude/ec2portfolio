@@ -1,0 +1,37 @@
+This document is being used to outline ec2portfolio's FE design planning.
+
+-UI Planning
+-Single Page Angular App
+
+Home(/)
+
+Ideas:  Admin View and Visitor View
+Start with Visitor View and the expand to Admin view
+
+//////////////
+//  Header  //
+//////////////
+
+Joshua Ho
+
+  Nav Links
+    Home
+      Skills
+    Projects
+    Experience
+
+////////////
+//  Main  //
+////////////
+
+//////////////
+//  Skills  //
+//////////////
+
+////////////////
+//  Projects  //
+////////////////
+
+//////////////////
+//  Experience  //
+//////////////////

@@ -1,52 +1,37 @@
 {
-  "name": "ec2portfolio",
+  "name": "EC2 Portfolio",
   "version": "1.0.0",
-  "description": "Joshua Ho's online portfolio @ joshuaho.me",
+  "description": "",
   "main": "server.js",
-  "author": "Joshua Ho",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricecreamdude/two-resource-angular.git"
+  },
+  "author": "",
   "license": "ISC",
-  "private": true,
+  "bugs": {
+    "url": "https://github.com/ricecreamdude/two-resource-angular/issues"
+  },
+  "homepage": "https://github.com/ricecreamdude/two-resource-angular#readme",
   "dependencies": {
-    "angular": "^1.5.5",
-    "express": "^4.13.4"
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.3"
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "2.3.1",
-    "gulp-cache": "^0.2.10",
-    "gulp-connect": "^2.2.0",
-    "gulp-filter": "^2.0.2",
-    "gulp-imagemin": "^2.3.0",
-    "gulp-jshint": "^1.11.1",
-    "gulp-karma": "0.0.4",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-minify-css": "^1.2.0",
-    "gulp-ng-annotate": "^1.0.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-rev": "^5.0.1",
-    "gulp-rev-replace": "^0.4.2",
-    "gulp-sass": "^2.0.4",
-    "gulp-uglify": "^1.2.0",
-    "gulp-useref": "^3.0.0",
-    "gulp-util": "^3.0.6",
-    "gulp-watch": "^4.2.4",
-    "jasmine-core": "^2.4.1",
-    "jshint-stylish": "^1.0.0",
-    "karma": "^0.13.22",
-    "karma-jasmine": "^0.3.8",
-    "karma-phantomjs-launcher": "^1.0.0",
-    "lazypipe": "^0.2.4",
-    "open": "0.0.5",
-    "phantomjs-prebuilt": "^2.1.7",
-    "rimraf": "^2.4.0",
-    "run-sequence": "^1.1.1",
-    "wiredep": "^2.2.2"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "karma start test/karma.conf.js"
+    "angular-mocks": "^1.5.0",
+    "babel-core": "^6.6.5",
+    "babel-loader": "^6.2.4",
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "html-loader": "^0.4.3",
+    "mocha": "^2.4.5",
+    "webpack": "^1.12.13",
+    "webpack-stream": "^3.1.0"
   }
-
 }

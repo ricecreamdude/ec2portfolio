@@ -1,0 +1,12 @@
+<div class="submit-form-container">
+  <div class="submit-form-header">
+    {{form.title}}
+  </div>
+  <form class="submit-form-body" action="index.html" method="post">
+    <label for="url" class="submit-form-label">URL:</label>
+    <input type="text" class="submit-form-url" name="url" ng-model="newPicture.link"/><br/>
+    <label for="description" class="submit-form-label">Description</label>
+    <input type="text" class="submit-form-description" name="description" ng-model="newPicture.description"><br />
+  </form>
+  <button type="button" name="button" ng-click="post(newPicture)">Add Picture</button>
+</div>

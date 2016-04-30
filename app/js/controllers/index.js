@@ -1,6 +1,6 @@
 //Main Controller, for Main Scope
 module.exports = function(app){
-  app.controller('PictureController' , ['$scope', 'cfResource' , function($scope , Resource){
+  app.controller('PortfolioController' , ['$scope', 'cfResource' , function($scope , Resource){
     $scope.pictures = {};
     $scope.newPerson = null;
     var pictureService = Resource('/');

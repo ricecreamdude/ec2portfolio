@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html data-ng-app="pictureApp" data-ng-controller="PictureController" data-ng-init="getAll()">
+<html data-ng-app="pictureApp" data-ng-controller="PortfolioController" data-ng-init="getAll()">
   <head>
     <meta charset="utf-8">
-    <title>Angular Friends Application</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <title>Joshua Ho Web Portfolio</title>
     <link rel="stylesheet" type="text/css" href="base/base.css">
+    <link rel="stylesheet" type="text/css" href="base/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="layout/layout.css" charset="utf-8">
     <link rel="stylesheet" type="text/css" href="modules/modules.css">
     <link rel="stylesheet" type="text/css" href="state/state.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </head>
   <main>
+    <nav class="navbar navbar-default">
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Projects</a></li>
+        <li role="presentation"><a href="#">Experience</a></li>
+      </ul>
+    </nav>
     <header id="header">
+      <button class="btn btn-large">Helloooo</button>
       <div class="header-title">
-        Picture display App
+        Joshua Ho
       </div>
+      <ul class="nav nav-pills">
+        <li role="presentation">Home</li>
+        <li role="presentation">Projects</li>
+        <li role="presentation">Experience</li>
+      </ul>
     </header>
-    <content id="secondary">
-      <picture-form>
-      </picture-form>
-    </content>
-    <content id="primary" >
+    <content id="primary">
         <picture-display ng-repeat="card in pictures track by $index" ></picture-display>
     </content>
     <footer id="footer">

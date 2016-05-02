@@ -1,10 +1,10 @@
 module.exports = function(app){
-  app.directive('templateNav' , function(){
+  app.directive('masterNav' , function(){
     return{
       replace: true,
       transclude: true,
       restrict: 'E',
-      templateUrl: '/templates/template_nav.html',
+      templateUrl: '/templates/master/master_nav.html',
       scope: true
     };
   });

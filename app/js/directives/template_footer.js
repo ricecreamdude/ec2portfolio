@@ -1,10 +1,10 @@
 module.exports = function(app){
-  app.directive('templateFooter' , function(){
+  app.directive('masterFooter' , function(){
     return{
       replace: true,
       transclude: true,
       restrict: 'AEC',
-      templateUrl: '/templates/template_footer.html',
+      templateUrl: '/templates/master/master_footer.html',
       scope: true
     };
   });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app="pictureApp" data-ng-controller="PortfolioController" data-ng-init="getAll()">
+<html data-ng-app="portfolioApp" data-ng-controller="PortfolioController" data-ng-init="getAll()">
   <head>
     <meta charset="utf-8">
     <title>Joshua Ho Web Portfolio</title>
@@ -12,13 +12,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </head>
   <body>
-    <template-nav> </template-nav>
-
-    <main id="primary">
-        <picture-display ng-repeat="card in pictures track by $index" ></picture-display>
-    </main>
-
-    <template-footer> </template-footer>
+    <master-nav> </master-nav>
+    <ui-view></ui-view>
+    <main id="primary"></main>
+    <master-footer class="ui-footer"> </template-footer>
   </body>
   <script type="text/javascript" src="bundle.js"></script>
 </html>

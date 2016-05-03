@@ -21,6 +21,9 @@ portfolioApp.config( function($stateProvider , $urlRouterProvider) {
   $stateProvider.state('main' , {
     url: '/',
     template: '<master-main>'
+  }).state('projects' , {
+    url: '/projects',
+    template: '<project-element>'
   }
   // .state('contact' , {
   //   url: '/contact',

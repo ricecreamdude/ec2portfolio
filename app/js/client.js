@@ -16,7 +16,7 @@ require( __dirname + '/directives')(portfolioApp);
 portfolioApp.config( function($stateProvider , $urlRouterProvider) {
 
   //All incorrect roads lead to 404
-  $urlRouterProvider.otherwise("/fourohfour");
+  $urlRouterProvider.otherwise("/");
 
   $stateProvider.state('main' , {
     url: '/',

@@ -1,22 +1,40 @@
 const angular = require('angular');
 const router = require('angular-ui-router');
-const bootstrapUI = require('angular-ui-bootstrap');
 //Scope properties ONLY inherit down state chains if views are nested
 
 
-var portfolioApp = angular.module('portfolioApp' , ['ui.router', 'ui.bootstrap'] );
+var portfolioApp = angular.module('portfolioApp' , ['ui.router'] );
 
-
-//Set Up UI Router config for pictureApp
-//This controls what views are seen at specific urls
-// portfolioApp.config( ($stateProvider , $urlRouterProvider) => {
-//
-//   $urlRouterProvider.otherwise("/");
-//
-// })
-
+//Add in Services, Controllers, Directives
 require( __dirname + '/services')(portfolioApp);
-
 require( __dirname + '/controllers')(portfolioApp);
-
 require( __dirname + '/directives')(portfolioApp);
+
+
+//Set Up UI-router for pictureApp
+//This controls what views are seen at specific urls
+portfolioApp.config( function($stateProvider , $urlRouterProvider) {
+
+  //All incorrect roads lead to 404
+  $urlRouterProvider.otherwise("/fourohfour");
+  $stateProvider.state('main' , {
+    url: '/',
+    template: '<my-element>',
+    controller: 'PortfolioController'
+  }
+  //Add more states!
+  // .state('main' , {
+  //   url: '/',
+  //   template: '<my-element>',
+  //   controller: 'controllerName'
+  // }
+);
+
+      //template: <can be a directive element assignment weird>
+
+    // To Be Added for admin view (Josh-View lol) using Nested Views
+    // .state('admin' , {
+    //
+    // })
+
+});

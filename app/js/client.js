@@ -19,7 +19,7 @@ portfolioApp.config( function($stateProvider , $urlRouterProvider) {
   $urlRouterProvider.otherwise("/fourohfour");
   $stateProvider.state('main' , {
     url: '/',
-    template: '<my-element>',
+    template: '<master-main>',
     controller: 'PortfolioController'
   }
   //Add more states!

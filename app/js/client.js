@@ -17,17 +17,15 @@ portfolioApp.config( function($stateProvider , $urlRouterProvider) {
 
   //All incorrect roads lead to 404
   $urlRouterProvider.otherwise("/fourohfour");
+
   $stateProvider.state('main' , {
     url: '/',
-    template: '<master-main>',
-    controller: 'PortfolioController'
+    template: '<master-main>'
   }
-  //Add more states!
-  // .state('main' , {
-  //   url: '/',
-  //   template: '<my-element>',
-  //   controller: 'controllerName'
-  // }
+  // .state('contact' , {
+  //   url: '/contact',
+  //   template: '<email>'
+  // })
 );
 
       //template: <can be a directive element assignment weird>

@@ -1,29 +1,20 @@
 /* UI Styles */
 
-/*p .ui-footer {
-  color: #333;
-}*/
-
 .ui-footer {
-
   padding: 15px 0px;
-
   border-top: 1.5px solid #e7e7e7;
   background-color: #f8f8f8;
   color: #5E5E5E;
 }
 
-
 /*  Footer Styles */
 .social-bar { }
-
 .social-icon {
   height: 32px;
   width: 32px;
   float: left;
   margin-right: 5px;
 }
-
 .footer-text {
   padding-top: 5px;
   clear: both;

@@ -23,19 +23,7 @@ portfolioApp.config( function($stateProvider , $urlRouterProvider) {
     template: '<master-main>'
   }).state('projects' , {
     url: '/projects',
-    template: '<project-element>'
-  }
-  // .state('contact' , {
-  //   url: '/contact',
-  //   template: '<email>'
-  // })
-);
-
-      //template: <can be a directive element assignment weird>
-
-    // To Be Added for admin view (Josh-View lol) using Nested Views
-    // .state('admin' , {
-    //
-    // })
+    template: '<view-project>'
+  })
 
 });

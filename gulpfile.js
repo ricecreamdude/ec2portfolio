@@ -63,7 +63,7 @@ gulp.task('watch' , () => {
 
   gulp.watch(__dirname + '/app/*.html' , ['html:dev']);
   gulp.watch(__dirname + '/app/templates/*.html' , ['html:dev']);
-  gulp.watch(__dirname + '/app/templates/**/**/*.html' , ['html:dev']);
+  gulp.watch(__dirname + '/app/templates/**/*.html' , ['html:dev']);
 
   gulp.watch(__dirname + '/test/**/*.js' , ['webpack:test']);
   gulp.watch(__dirname + '/test/*.js' , ['webpack:test']);

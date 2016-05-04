@@ -9,10 +9,18 @@ gulp.task('html:dev', () => {
     .pipe(gulp.dest(__dirname + '/build'));
 });
 
+
 gulp.task('css:dev' , () => {
   gulp.src(__dirname + '/app/css/**/*.css')
     .pipe(gulp.dest(__dirname + '/build'));
 });
+
+//Add img resources to build, local
+gulp.task('resource:dev' , () => {
+  gulp.src( __dirname + '/app/resources/**/*.png')
+    .pipe(gulp.dest( __dirname + '/build'));
+});
+
 
 gulp.task('webpack:dev', () => {
   gulp.src(__dirname + '/app/js/client.js')
@@ -55,14 +63,18 @@ gulp.task('watch' , () => {
 
   gulp.watch(__dirname + '/app/*.html' , ['html:dev']);
   gulp.watch(__dirname + '/app/templates/*.html' , ['html:dev']);
-  gulp.watch(__dirname + '/app/templates/**/**/*.html' , ['html:dev']);
+  gulp.watch(__dirname + '/app/templates/**/*.html' , ['html:dev']);
 
   gulp.watch(__dirname + '/test/**/*.js' , ['webpack:test']);
   gulp.watch(__dirname + '/test/*.js' , ['webpack:test']);
+
+  gulp.watch(__dirname + '/app/resources/*.png' , ['resource:dev']);
 });
 
-gulp.task('build:dev', ['webpack:dev', 'html:dev' , 'css:dev' , 'webpack:test']);
 
-gulp.task('default', ['build:dev']);
+
+gulp.task('build:dev', ['webpack:dev', 'html:dev' , 'css:dev' , 'resource:dev', 'webpack:test']);
+
+gulp.task('default', ['build:dev', 'watch']);
 
 //Copied form GitHub - Javascript Week 6

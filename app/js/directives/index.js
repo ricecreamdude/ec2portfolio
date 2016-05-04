@@ -1,6 +1,12 @@
 module.exports = exports = function(app){
+  require( __dirname + '/template_nav')(app);
+  require( __dirname + '/template_main')(app);
+  require( __dirname + '/template_footer')(app);
 
-  require( __dirname + '/picture_display')(app);
-  require( __dirname + '/picture_form')(app);
+  //Views
+  require( __dirname + '/project/view_project')(app);
+
+  //Cards or Modules
+  // require( __dirname + '/card_project')(app);
 
 };

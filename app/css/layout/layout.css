@@ -1,38 +1,51 @@
-#header {
-  height: 70px;
-  padding: 20px 10px;
-  background-color: white;
-  margin-bottom: 3px;
-  font-weight: bold;
+/* UI Styles */
+
+.ui-footer {
+  padding: 15px 0px;
+  border-top: 1.5px solid #e7e7e7;
+  background-color: #f8f8f8;
+  color: #5E5E5E;
 }
 
-  .header-title{
-    font-size: 24px;
-  }
-
-#primary {
-  padding: 20px 10px;
-  width: 72%;
+/*  Footer Styles */
+.social-bar { }
+.social-icon {
+  height: 32px;
+  width: 32px;
   float: left;
-  background-color: white;
+  margin-right: 5px;
 }
-#secondary {
-  padding: 20px 10px;
-  width: 27.8%;
-  float: left;
-  background-color: white;
-  margin-right: 0.2%;
+.footer-text {
+  padding-top: 5px;
+  clear: both;
 }
 
-#footer {
-  height: 100px;
+/* Project Card */
+.container-project {
+  padding: 0px 0px 20px 0px;
+}
+.container-project h2 {
+  text-align: center;
+}
+
+.card-project {
+  width: 550px;
+  padding: 20px 10px;
+  background-color: #f8f8f8;
+  border: 1.5px solid #e7e7e7;
+  float: left;
+  margin: 0px 10px;
+
+}
+.card-project img {
   width: 100%;
-  padding: 30px 10px;
-  float: left;
-  display: block;
-  margin-top: 3px;
-  background-color: white;
+  height: 300px;
+  border-radius: 5px;
 }
-  .footer-body {
-    font-style: italic;
-  }
+.card-project-text p h1 h2 h3 h4 {
+  color: #5E5E5E;
+}
+.card-project-text p{
+  padding-left: 10px;
+  color: #5E5E5E;
+}
